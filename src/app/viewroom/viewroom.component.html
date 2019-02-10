@@ -1,0 +1,170 @@
+<div class="container">
+<h1>View Rooms</h1>
+
+<small>*use this filter to find specific rooms</small>
+<form>
+  
+  <div class="form-row">
+    <div class="col">
+      <label for="inputID">Room ID</label>
+      <input type="text" class="form-control" id="inputID" placeholder="Room ID">
+    </div>
+
+    <div class="col">
+          <label for="inputRS">Room Size</label>
+          <input type="text" class="form-control" id="inputRS" placeholder="4 Guest">
+        </div>
+
+        <div class="col">
+            <label for="inputavail">Availability</label>
+            <input type="text" class="form-control" id="inputavail" placeholder="Available/Not-Available">
+          </div>
+
+          <div class="col">
+              <label for="inputRR">Room Rate</label>
+              <input type="text" class="form-control" id="inputRR" placeholder="e.g $99 / Night">
+            </div>
+
+          <div class="col">
+              <label for="inputadd">Additional</label>
+              <input type="text" class="form-control" id="inputadd" placeholder="Additional Request">
+            </div>
+
+  </div>
+  <br>
+  <button type="button" class="btn btn-outline-success">Find
+  </button>
+
+</form>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">RoomID</th>
+      <th scope="col">Room Number</th>
+      <th scope="col">Room Size</th>
+      <th scope="col">Room Rate</th>
+      <th scope="col">Availability</th>
+      <th scope="col">Additional</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">RM001</th>
+      <td>111</td>
+      <td>3 Guest</td>
+      <td>$120 Per Night</td>
+      <td>Available</td>
+      <td>Balcony for Smoking</td>
+    </tr>
+    <tr>
+      <th scope="row">RM002</th>
+      <td>112</td>
+      <td>2 Guest</td>
+      <td>$100 Per Night</td>
+      <td>Available</td>
+      <td>Balcony for Smoking</td>
+    </tr>
+    <tr>
+      <th scope="row">RM003</th>
+      <td>113</td>
+      <td>4 Guest</td>
+      <td>$140 Per Night</td>
+      <td>Not-Available</td>
+      <td>2 Queen Size Bed</td>
+    </tr>
+    <tr>
+      <th scope="row">RM004</th>
+      <td>114</td>
+      <td>6 Guest</td>
+      <td>$200 Per Night</td>
+      <td>Not-Available</td>
+      <td>3 Queen Size Bed</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<hr>
+<br>
+
+ <!--this is for  room booking log-->
+<div class="container">
+  <div class="container  test ">
+  <h1>Room Booking Log</h1>
+</div>
+  
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Booking ID</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">RoomID</th>
+        <th scope="col">Payment Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>BK001</td>
+        <td>John Doe</td>
+        <td>RM001</td>
+        <td>Credit-Card</td>
+        <td> <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">View Details
+          </button></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>BK002</td>
+        <td>Jerry toh</td>
+        <td>RM002</td>
+        <td>Credit-Card</td>
+        <td> <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">View Details
+          </button></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>BK003</td>
+        <td>Malcom</td>
+        <td>RM003</td>
+        <td>Cash</td>
+        <td> <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">View Details
+          </button></td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>BK004</td>
+        <td>Peter</td>
+        <td>RM004</td>
+        <td>Cash</td>
+        <td> <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">View Details
+          </button></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Guest Name: John Doe</p> 
+        <p>Number of Adults: 2 | Number of Children :1</p>
+        <P>Check In date: 29/9 | Check Out Date: 4/10</P>
+        <p>Room ID: RM007 | Room Number : 117</p>
+        <p>Additional Request: Infant Support </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
